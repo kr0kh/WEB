@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>  
+    <head>  
+        <meta charset="utf-8">
+        <meta name="author" content="Сергей">
+        <meta name="description" content="Test">
+        <meta name="keywords" content="Test">
+
+         <!--Теги для подключения файлов-->
+        <link rel="stylesheet" href="css/main.css"> //подключение css файла
+        <title>Главная страница</title>
+    </head>
+    <body>
+        <!--Заголовои-->
+        <h1>Заголовок 1</h1>
+        <h2>Заголовок 2</h2>
+        <h3>Заголовок 3</h3>
+
+        <!--Переход на следущуюстроку-->
+        Просто текст<br>Просто текст
+        Просто текст<hr>Просто текст
+
+        <!--Виды абзацев-->
+        <p>Абзац</p>
+        <p><b>Жирный абзац</b></p>
+        <p><i>Курсивный абзац</i></p>
+        <p><u>Подчеркнутый абзац</u></p>
+        <p><s>Зачеркнутый абзац</s></p>
+        <p><mark>Выделенный абзац</mark></p>
+
+        <!--Работа с рядами-->
+        <sub>Нижний</sub> ряд<br>
+        <sup>Верхний</sup> ряд<hr>
+
+        <!--Абривиатура-->
+        <abbr>>HTML</abbr>
+
+        <!--Адрес-->
+        <address>Seatle, USA</address>
+
+        <!--Размер-->
+        <big>Большой текст</big><br>
+        <small>Маленький текст</small><br>
+
+        <!--Отображение со сохранением символов-->
+        <pre>[p 
+            p[ 
+            p[]]
+        </pre>
+
+        <!--Списки-->
+        <ol start="7">//нумерованный список
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+            <li>Пункт 3</li>
+        </ol>
+        <ul type="square">//маркированный список
+            <li>Пункт 1</li>
+            <li>Пункт 2</li>
+            <li>Пункт 3</li>
+        </ul>
+
+        <!--Атрибуты-->
+        <p align="center">Абзац по центру</p>
+        <p align="right">Абзац справа</p>
+        <p align="left">Абзац слева</p>
+        
+        <!--Ссылки-->
+        <a href="https://www.google.com"
+        title="Нажми на меня!"
+        target="_blank"> //открыть в новой вкладке
+        Перейти в гугл</a>
+        <a> href="/Файл"> //открыть файл в той же папке
+        Открыть файл</a>
+        <a href="#footer"> //переход к футеру(Ссылка-якорь)
+        Перейти к футеру</a>
+        <a name="footer"></a>
+        <a href="mailto:krokh@mail.ru"> //открыть почтовый клиент
+        Написать письмо</a>
+
+        <!--Изображения-->
+        <img src="....."
+         width="100%"
+         height="200px"
+         alt="Изображение">
+        </img>//Изображение в интернете/Изображение в папке
+        
+        <!--Таблицы-->
+        <table border="1"
+         width="50px"
+         height="50px"
+         >
+            <thead>
+                <tr>
+                    <th>Заголовок 1</th>
+                    <th>Заголовок 2</th>
+                    <th>Заголовок 3</th>
+                </tr>    
+            </thead>
+            <tbody align="center">
+                <tr>
+                    <td>Ячейка 1</td>
+                    <td>Ячейка 2</td>
+                    <td>Ячейка 3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Футер 1</td>
+                    <td>Футер 2</td>
+                    <td>Футер 3</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!--Теги для подключения файлов-->
+        <script> src="js/main.js" </script>//подключение js файла(ОБЯЗАТЕЛЬНО В КОНЦЕ BODY)
+
+       <!--div & span-->
+        <div>Просто текст</div>
+        <span>Просто текст</span>
+
+        <!--Формы и поля ввода-->
+        <form action="" method="post">
+            <label for="User_name">Введите имя</label>
+            <input type="text" placeholder=""
+            value="Что-то" maxlenghth="50" hidden=""
+            name="User_name" id="User_name">
+
+            <input type="password" placeholder="Password">
+            <input type="email" placeholder="Email">
+            <input type="tel" placeholder="Телефон">
+            <input type="number" placeholder="Число" min="1" max="10">
+            <input type="date" placeholder="Дата">
+            <input type="url" placeholder="Ссылка">
+            <input type="color" placeholder="Цвет">
+            <input type="range" placeholder="Диапазон" min="0" max="100">
+            <input type="checkbox" checked=""> //галочка
+            <input type="radio" name="gender">
+            <input type=""radio" name="gender">
+            <input type="button">
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Сбросить">
+        </form>
+
+        <!--Поле для ввода текста. Тег для создания кнопки-->
+        <form>
+            <textarea placeholder="Введите что-то"
+             name="" id="">
+            Просто текст
+            </textarea>
+            
+            <button type="reset">Нажми на меня</button>
+        </form>
+
+        <!--Селекторы выбора-->
+        <form>
+            <select>
+                <option disabled selected>BMW</option>
+                <option selected>Audi</option>
+                <option>Mercedes</option>
+            </select>  
+        </form>
+
+        <!--HTML5-->
+        <header>Шапка</header>
+        <main>Основной контент</main>
+        <aside>Боковая панель</aside>
+        <footer>Футер</footer>
+
+        <progress 
+            max="100"" value="50">
+        </progress>
+
+        <details>
+            <summary>Подробнее</summary>
+            Скрытый текст
+        </details>
+    </body>
+</html>

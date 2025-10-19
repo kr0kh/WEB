@@ -1,0 +1,66 @@
+body {
+    background-color: lightgray;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.main-text {
+    color: blue; /*//через класс*/
+    text-align: center;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Times New Roman', Times, serif;
+
+    text-transform: lowercase;
+    word-spacing: 20px;
+    letter-spacing: 2px;
+    line-height: 50px;
+    cursor: alias;
+}
+
+#bold-in-b {
+    color: green; /*//через id*/
+}
+/*div b, div i { 
+    color: red;//через вложенность
+} */
+
+.main-text {
+    color: red;
+    text-decoration: none;
+}
+
+.main_link:hover { /*//псевдокласс*/
+    color: orange;
+    text-decoration: underline;
+    text-decoration-color: black;
+    cursor: pointer
+} 
+
+.main_link:active {
+    color: darkorange;
+    text-decoration: line-through;
+    text-decoration-color: black;
+    cursor: pointer;
+    transform: translateY(1px);
+}
+
+.main_link:visited {
+    text-decoration: line-through;
+    color: purple;
+}
+
+.input-field:focus {
+    color: red;
+}
+
+input {
+    color: black;
+}
+
+#some-id::after { /*//псевдоэлемент*/
+    content: " -  текст добавленный с помощью псевдоэлемента";
+    color: brown;
+}
+
